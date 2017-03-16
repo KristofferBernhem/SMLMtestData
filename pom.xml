@@ -12,20 +12,15 @@
 		<relativePath />
 	</parent>
 
-	<groupId>imagej-tutorials</groupId>
-	<artifactId>ij2-image-plus</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<groupId>KTH_CellPhysics</groupId>
+	<version>0.1.0</version>
 
-	<name>IJ2 ImagePlus</name>
-	<description>
-		This project provides examples on how to work with ImagePlus with the new image types in IJ2.
-		It's goal is to help transition from IJ1 style plugins to IJ2.
-	</description>
-	<url>https://github.com/[MY-ORG]/[MY-REPO]</url>
+	<name>SMLMtestData</name>
+	<url>https://github.com/KristofferBernhem/SMLMtestData</url>
 	<inceptionYear>2016</inceptionYear>
 	<organization>
-		<name>[MY-ORGANIZATION-NAME]</name>
-		<url>[MY-ORGANIZATION-WEB-SITE]</url>
+		<name>KTH-Royal Institute of Technology</name>
+		<url>www.kth.se</url>
 	</organization>
 	<licenses>
 		<license>
@@ -36,11 +31,18 @@
 	</licenses>
 
 	<developers>
-		<developer>
-			<id>[MY-GITHUB-ID]</id>
-			<name>[MY-FULL-NAME]</name>
-			<url>https://imagej.net/User:[MY-IMAGEJ-WIKI-ACCOUNT]</url>
-		</developer>
+		    <developer>
+      <id>Koffe</id>
+      <name>Kristoffer Bernhem</name>
+      <url>github.com/KristofferBernhem/</url>
+      <roles>
+        <role>lead</role>
+        <role>developer</role>
+        <role>debugger</role>
+        <role>support</role>
+        <role>maintainer</role>
+      </roles>
+    </developer>
 	</developers>
 	<contributors>
 		<contributor>
@@ -56,14 +58,14 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/[MY-ORG]/[MY-REPO]</connection>
-		<developerConnection>scm:git:git@github.com:[MY-ORG]/[MY-REPO]</developerConnection>
+		<connection>scm:git:git://github.com/KristofferBernhem/SMLMtestData</connection>
+		<developerConnection>scm:git:git@github.com:KristofferBernhem/SMLMtestData</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/[MY-ORG]/[MY-REPO]</url>
+		<url>https://github.com/KristofferBernhem/SMLMtestData</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>http://github.com/[MY-ORG]/[MY-REPO]/issues</url>
+		<url>https://github.com/KristofferBernhem/SMLMtestData/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
@@ -99,4 +101,5 @@
 			<artifactId>imagej-legacy</artifactId>
 		</dependency>
 	</dependencies>
+	<artifactId>SMLMtestData</artifactId>
 </project>
