@@ -2,10 +2,8 @@ import java.util.Random;
 
 import cern.jet.random.Poisson;
 import cern.jet.random.engine.MersenneTwister;
-import cern.jet.random.engine.RandomEngine;
 import ij.ImagePlus;
 import ij.ImageStack;
-import ij.WindowManager;
 import ij.process.ShortProcessor;
 
 /* Copyright 2017 Kristoffer Bernhem.
@@ -32,14 +30,14 @@ public class GenerateImStack {
 
 	public static void main(String[] args) {
 		// make default values, plugin will allow user to set these.
-		int nFrame 				= 1000; // number of frames to generate.
+		int nFrame 				= 25000; // number of frames to generate.
 		boolean staticObject 	= false; // if a static element should be included.
 		int frameSize 			= 32; // pixel width.
 		int pixelSize 			= 100; // pixelsize in nm.
 		int[] objectCenter 		= {1580,1610}; // center position of object in nm.
 		int gWidth				= 150;
 		double SNR				= 5; // signal to noise ratio.
-		int photons 			= 100;
+		int photons 			= 1000;
 		ShortProcessor cleanFrame 		= makeClean(frameSize, pixelSize, objectCenter, gWidth);	
 		
 		
@@ -114,7 +112,7 @@ public class GenerateImStack {
 		/*
 		 * create test frame.
 		 */
-		ImagePlus Image = ij.IJ.createHyperStack("Clean", 
+		ImagePlus Image = ij.IJ.createHyperStack(("Testdata_"+(int)SNR+"_"+photons), 
 				frameSize, 
 				frameSize, 
 				1, 
